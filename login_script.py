@@ -42,7 +42,6 @@ async def login(username, password, panel):
 
         await page.type('#id_username', username)
         await page.type('#id_password', password)
-        print({'#id_username'}, page.type('#id_username', username))
 
         login_button = await page.querySelector('#submit')
         if login_button:
